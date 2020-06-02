@@ -11,10 +11,11 @@ public class Exer6 {
 		
 		for(int i = 0;i <=20; i++) {
 			
-			System.out.println(i);// lista
-			//System.out.print("[" + i + "]"); // lado a lado
+			//System.out.println(i);// lista
+			System.out.print("[" + i + "]" ); // lado a lado
 			
 		}
+                System.out.println();
 	}
 
 }

@@ -28,6 +28,7 @@ public class Exer10 {
                 System.out.print("[" + i + "]");
 
             }
+            System.out.println();
 
         } else {
 
@@ -38,10 +39,10 @@ public class Exer10 {
                     ++i;
                     controle = false;
                 }
-                System.out.println("[" + i + "]");
+                System.out.print("[" + i + "]");
 
             }
-
+             System.out.println();
         }
 
     }

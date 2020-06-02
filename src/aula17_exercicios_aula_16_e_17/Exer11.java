@@ -4,52 +4,50 @@ import java.util.Scanner;
 
 public class Exer11 {
 
-	public static void main(String[] args) {
-		// 11 - Altere o programa anterior para mostrar no final a soma dos números.
-		
-		Scanner t = new Scanner(System.in);
-		int valor1, valor2;
-		System.out.println("Informe um número inteiro:");
-		valor1 = t.nextInt();
-		System.out.println("Informe outro número inteiro:");
-		valor2 = t.nextInt();
-		boolean controle = true;
-		double soma = 0;
+    public static void main(String[] args) {
+        // 11 - Altere o programa anterior para mostrar no final a soma dos números.
 
-		if (valor1 < valor2) {
+        Scanner t = new Scanner(System.in);
+        int valor1, valor2;
+        System.out.println("Informe um número inteiro:");
+        valor1 = t.nextInt();
+        System.out.println("Informe outro número inteiro:");
+        valor2 = t.nextInt();
+        boolean controle = true;
+        double soma = 0;
 
-			for (int i = valor1; i < valor2; i++) {
+        if (valor1 < valor2) {
 
-				if (controle == true) {
-					System.out.println("Números inteiros no intervalo de " + valor1 + " à " + valor2);
-					++i;
-					controle = false;
-				}
-				System.out.print("[" + i + "]");				
-				soma +=i;
-			
+            for (int i = valor1; i < valor2; i++) {
 
-			}
+                if (controle == true) {
+                    System.out.print("Números inteiros no intervalo de " + valor1 + " à " + valor2 + ":");
+                    ++i;
+                    controle = false;
+                }
+                System.out.print("[" + i + "]");
+                soma += i;
 
-		} else {
+            }
+            System.out.println();
 
-			for (int i = valor2; i < valor1; i++) {
+        } else {
 
-				if (controle == true) {
-					System.out.println("Números inteiros no intervalo de " + valor2 + " à " + valor1);
-					++i;
-					controle = false;
-				}
-				
-				System.out.print("[" + i + "]");
-				soma +=i;
+            for (int i = valor2; i < valor1; i++) {
 
-			}
+                if (controle == true) {
+                    System.out.print("Números inteiros no intervalo de " + valor2 + " à " + valor1 + ":");
+                    ++i;
+                    controle = false;
+                }
 
-		}
-		System.out.println("\n");
-		System.out.println("Soma dos números:\n[" + soma + "]");
+                System.out.print("[" + i + "]");
+                soma += i;
 
-	}
+            }
+            System.out.println();
+        }
+        System.out.print("Soma dos números:[" + soma + "]\n");
+    }
 
 }

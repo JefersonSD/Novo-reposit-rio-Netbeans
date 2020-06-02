@@ -6,7 +6,7 @@ public class Exer4_Op_2 {
 
 		long A = 80000;
 		long B = 200000;
-		int anos = 1;
+		int anos = 0;
 
 		while (A < B) {
 

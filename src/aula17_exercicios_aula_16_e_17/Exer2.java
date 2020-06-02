@@ -21,8 +21,8 @@ public class Exer2 {
 		while(senha.equalsIgnoreCase(nome)) {
 			
 			System.err.println("Senha não pode ser igual ao nome do usuário ");
-			System.out.println("Informe um nome de usuário:");
-			nome = t.next();
+//			System.out.println("Informe um nome de usuário:");
+//			nome = t.next();
 			System.out.println("Informe uma senha:");
 			senha = t.next();
 		}
