@@ -12,7 +12,7 @@ public class Exer29 {
 //        deverá ter o dobro de elementos de A e B, ou seja, 20 elementos. 
 
         int[] A = new int[10];
-        int[] B = new int[10];
+        int[] B = new int[A.length];
         int[] C = new int[A.length + B.length];
         for (int i = 0; i < A.length; i++) {
             A[i] = (int) (1 + Math.random() * 9);

@@ -14,8 +14,10 @@ public class Exer23 {
         int[] A = new int[10];
         boolean flag = false;
         for (int i = 0; i < A.length; i++) {
-            A[i] = (int) (1 + Math.random() * 99);
+            A[i] = (int) (1 + Math.random() * 10);
         }
+        System.out.println();
+
         for (int i = 0; i < A.length; i++) {
             if (A[i] % 2 != 0) {
                 flag = true;
@@ -24,6 +26,7 @@ public class Exer23 {
                 break;
             }
         }
+
         if (flag == false) {
             System.out.print("Todos os elementos do vetor A são pares:");
             for (int i = 0; i < A.length; i++) {

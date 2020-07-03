@@ -11,13 +11,14 @@ public class Exer32 {
 
         int[] A = {2, 8, 9, 10, 4};
         for (int i = 0; i < A.length; i++) {
-                System.out.println("Tabuada de " + A[i]);
+            System.out.println("");
+            System.out.println("Tabuada de " + A[i]);
             for (int j = 1; j <= 10; j++) {
                 System.out.println(A[i] + " X " + j + " = " + A[i] * j);
             }
         }
         // Tentativa de imprimir lado a lado sem sucesso
-       /* int[] A = {2, 8, 9, 10, 4};
+        /* int[] A = {2, 8, 9, 10, 4};
         String[][] matriz = new String[11][5];
         for (int i = 0; i < A.length; i++) {
             for (int j = 0; j < 10; j++) {

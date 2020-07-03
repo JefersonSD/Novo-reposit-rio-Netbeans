@@ -21,6 +21,11 @@ public class Exer12 {
 
             soma += A[i];
         }
+        System.out.print("Valores do vetor A:");
+        for (int i = 0; i < A.length; i++) {
+            System.out.print(" {" + A[i] + "} ");
+        }
+        System.out.println();
         System.out.println("A soma dos números do vetor é igula a: " + soma);
 
     }

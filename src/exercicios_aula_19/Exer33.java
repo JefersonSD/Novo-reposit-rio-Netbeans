@@ -16,14 +16,17 @@ public class Exer33 {
         int[] A = new int[10];
         System.out.println("Informe 10 números para saber quais são primos:");
         int cont = 0;
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < A.length; i++) {
             System.out.println("Informe o " + (i + 1) + "º número:");
             A[i] = t.nextInt();
         }
         for (int i = 0; i < A.length; i++) {
-            for (int j = 0; j <= A[i]; j++) {
-                if (A[i] % (j + 1) == 0) {
+            for (int j = 1; j <= A[i]; j++) {
+                if (A[i] % j == 0) {
                     cont++;
+                }
+                if(cont > 2){
+                    break;
                 }
             }
             if (cont == 2) {

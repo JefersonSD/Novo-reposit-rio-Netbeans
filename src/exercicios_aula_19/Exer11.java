@@ -18,14 +18,10 @@ public class Exer11 {
             int preencheVetor = (int) (1 + Math.random() * 99);
             for (int i = 0; i < A.length; i++) {
                 if (preencheVetor == A[i]) {
+                    flag = true;
                     break;
-                } else if (preencheVetor != A[i] && A[i] == 0) {
+                } else if (A[i] == 0) {
                     A[i] = preencheVetor;
-                    break;
-                }
-            }
-            for (int i = 0; i < A.length; i++) {
-                if (A[i] == 0) {
                     flag = true;
                     break;
                 }
@@ -37,7 +33,6 @@ public class Exer11 {
             if (A[i] % 2 == 0) {
                 contador++;
             }
-
         }
         System.out.println();
         System.out.println("Quantidade de números pares no vetor A: " + contador);

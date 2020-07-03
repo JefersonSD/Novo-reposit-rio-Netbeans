@@ -7,8 +7,8 @@ package exercicios_aula_19;
 public class Teste {
 
     public static void main(String[] args) {
-        
 
+        
     }
 
 }

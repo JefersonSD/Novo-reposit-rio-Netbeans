@@ -19,6 +19,8 @@ public class Exer24 {
         for (int i = 0, j = A.length - 1; i < A.length / 2; i++, j--) {
             if (A[i] == A[j]) {
                 contador++;
+            }else{
+                break;
             }
         }
         if (contador == A.length / 2) {

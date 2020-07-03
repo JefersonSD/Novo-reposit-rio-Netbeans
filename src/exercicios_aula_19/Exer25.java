@@ -15,7 +15,7 @@ public class Exer25 {
 //            b) B[i] deverá receber 0 quando A[i] for ímpar.
         Scanner t = new Scanner(System.in);
         int[] A = new int[10];
-        int[] B = new int[10];
+        int[] B = new int[A.length];
         System.out.println("Informe 10 números:");
         for (int i = 0; i < A.length; i++) {
             A[i] = t.nextInt();
@@ -24,6 +24,7 @@ public class Exer25 {
             } else {
                 B[i] = 0;
             }
+            //B[i] = (A[i] % 2 == 0) ? 1:0;// If ternário ensinado pela Loiane
         }
         System.out.print("Vetor A:");
         for (int i = 0; i < A.length; i++) {

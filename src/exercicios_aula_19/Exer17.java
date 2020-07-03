@@ -15,7 +15,7 @@ public class Exer17 {
         Scanner t = new Scanner(System.in);
         int [] idades = new int[10];
         int contador = 0;
-        System.out.println("Informe a 10 idades:");
+        System.out.println("Informe as 10 idades:");
         for (int i = 0; i < idades.length; i++) {
             System.out.println("Informe a " + (i+1) + "ª idade:");
             idades[i] = t.nextInt();
@@ -23,7 +23,12 @@ public class Exer17 {
                 contador++;
             }
         }
-        System.out.println("Quantidade de pessoas com idades superiores a 35: " + contador + "pessoas");
+        System.out.print("Elementos do vetor idades:");
+        for (int i = 0; i < idades.length; i++) {
+            System.out.print(" [" + idades[i] + "] ");
+        }
+        System.out.println();
+        System.out.println("Quantidade de pessoas com idades superiores a 35: " + contador + " pessoas");
     }
     
 }

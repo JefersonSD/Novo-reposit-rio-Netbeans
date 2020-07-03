@@ -37,7 +37,11 @@ public class Exer22 {
                 break;
             }
         }
-
+        System.out.print("Valores do vetor A:");
+        for (int i = 0; i < A.length; i++) {
+            System.out.print("["+A[i]+"]");
+        }
+        System.out.println();
         System.out.println("Porcentagem de números 0 no vetor A: " + Math.floor(percent0) + "%");
         System.out.println("Porcentagem de números 1 no vetor A: " + Math.floor(percent1) + "%");
 

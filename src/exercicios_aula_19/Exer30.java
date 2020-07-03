@@ -11,8 +11,8 @@ public class Exer30 {
 //        pares e ímpares de A, respectivamente.
 
         int[] A = new int[20];
-        int[] B;
-        int[] C;
+        int[] B = null;
+        int[] C = null;
         int contPar = 0, contImpar = 0;
         for (int i = 0; i < A.length; i++) {
             A[i] = (int) (1 + Math.random() * 19);
@@ -22,8 +22,12 @@ public class Exer30 {
                 contImpar++;
             }
         }
-        B = new int[contPar];
-        C = new int[contImpar];
+        if(contPar != 0){
+            B = new int[contPar];
+        }
+        if(contImpar != 0){
+             C = new int[contImpar];
+        }
         int contadorB = 0, contadorC = 0;
         for (int i = 0; i < A.length; i++) {
             if (A[i] % 2 == 0) {

@@ -25,6 +25,11 @@ public class Exer13 {
                 soma += A[i];
             }
         }
+        System.out.print("Valores do vetor A:");
+        for (int i = 0; i < A.length; i++) {
+            System.out.printf("{ %.0f }",A[i]);
+        }
+        System.out.println();
         System.out.println("Soma dos múltiplos de 5: " + soma);
     }
 }

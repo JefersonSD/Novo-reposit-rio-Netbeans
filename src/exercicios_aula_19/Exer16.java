@@ -24,6 +24,11 @@ public class Exer16 {
                 contador++;
             }
         }
+        System.out.print("Elementos do vetor A:");
+        for (int i = 0; i < A.length; i++) {
+            System.out.print(" [" + A[i] + "] ");
+        }
+        System.out.println();
         System.out.println("Soma dos elementos armazenados no vetor A que são inferiores a 15: " + somaMenor15);
         System.out.println("Quantidade de elementos armazenados no vetor A que são iguais a 15: " + iguaisA15);
         System.out.printf("Média dos elementos armazenados no vetor A que são superiores a 15: %.2f\n", mediaSuperiorA15 / contador);

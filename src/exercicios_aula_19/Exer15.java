@@ -28,20 +28,29 @@ public class Exer15 {
                 contPar++;
             }
         }
-        for (double i = 0.01; i < 1; i += 0.01) {
-            percentImpar = 10 * i;
-            if (percentImpar >= contImpar) {
-                percentImpar = i * 100;
-                break;
+        if (contImpar > 0) {
+            for (double i = 0.01; i <= 1 || i > 1; i += 0.01) {
+                percentImpar = 10 * i;
+                if (percentImpar >= contImpar) {
+                    percentImpar = i * 100;
+                    break;
+                }
             }
         }
-        for (double i = 0.01; i < 1; i += 0.01) {
-            percentPar = 10 * i;
-            if (percentPar >= contPar) {
-                percentPar = i * 100;
-                break;
+        if (contPar > 0) {
+            for (double i = 0.01; i <= 1 || i > 1; i += 0.01) {
+                percentPar = 10 * i;
+                if (percentPar >= contPar) {
+                    percentPar = i * 100;
+                    break;
+                }
             }
         }
+        System.out.print("Valores do vetor A:");
+        for (int i = 0; i < A.length; i++) {
+            System.out.printf("{ %.0f }",A[i]);
+        }
+        System.out.println();
         System.out.printf("Porcentagem de números pares no vetor A: %.0f ", Math.floor(percentPar));
         System.out.println();
         System.out.printf("Porcentagem de números ímpares no vetor A: %.0f\n", Math.floor(percentImpar));

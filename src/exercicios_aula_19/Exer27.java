@@ -17,9 +17,9 @@ public class Exer27 {
 //            Sugestão: char B[10];
 
         int[] A = new int[10];
-        char[] B = new char[10];
+        char[] B = new char[A.length];
         for (int i = 0; i < A.length; i++) {
-            A[i] = (int) (1 + Math.random() * 10);
+            A[i] = (int) (1 + Math.random() * 15);
             if (A[i] < 7) {
                 B[i] = 'a';
             } else if (A[i] == 7) {

@@ -1,6 +1,8 @@
 
 package exercicios_aula_19;
 
+import java.text.DecimalFormat;
+
 /**
  *
  * @author jsjef
@@ -14,11 +16,13 @@ public class Exer20_21 {
         double [] A = new double[20];
         double cotacao = 4.96;
         for (int i = 0; i < A.length; i++) {
-            A[i] = cotacao * i;
+            A[i] = cotacao * (i+1);
         }
+        DecimalFormat f = new DecimalFormat("##,##.##");
         System.out.println("VAlores no vetor A:");
         for (int i = 0; i < A.length; i++) {
-            System.out.println(" ["+A[i]+"] ");
+            System.out.println(" ["+f.format(A[i])+"] ");
+            //System.out.println(" ["+(A[i])+"] ");
         }
         
     

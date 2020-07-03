@@ -22,25 +22,27 @@ public class Exer34 {
         }
         int cont = 0;
         for (int i = 0; i < A.length; i++) {
-            for (int j = 0; j <= A[i]; j++) {
+            for (int j = 2; j <= A[i]; j++) {
                 if (j % 2 == 0) {
                     cont++;
                 }
             }
             Aux = new int[cont];
             cont = 0;
-            for (int j = 0; j <= A[i]; j++) {
+            for (int j = 2; j <= A[i]; j++) {
                 if (j % 2 == 0) {
                     Aux[cont] = j;
                     cont++;
                 }
             }
             cont = 0;
-            System.out.print("Valor no vetor A: [" + A[i] + "] ");
-            System.out.println();
-            System.out.print("Valores pares entre 0 e " + A[i] + ": ");
-            for (int j = 0; j < Aux.length; j++) {
-                System.out.print("[" + Aux[j] + "]");
+            if (A[i] > 1) {
+                System.out.print("Valor no vetor A: [" + A[i] + "] ");
+                System.out.println();
+                System.out.print("Valores pares entre 0 e " + A[i] + ": ");
+                for (int j = 0; j < Aux.length; j++) {
+                    System.out.print("[" + Aux[j] + "]");
+                }
             }
             System.out.println();
             System.out.println();

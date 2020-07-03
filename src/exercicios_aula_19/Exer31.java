@@ -10,20 +10,19 @@ public class Exer31 {
 //        no início do vetor B armazene os elementos pares de A e nas posições restantes do vetor B armazene os elementos de A que são 
 //        ímpares.
 
+        
         int[] A = new int[20];
-        int[] B = new int[20];
+        int[] B = new int[A.length];
         int contPar = 0, contImpar = 0;
         for (int i = 0; i < A.length; i++) {
             A[i] = (int) (1 + Math.random() * 9);
             if (A[i] % 2 == 0) {
                 contPar++;
-            } else {
-                contImpar++;
-            }
+            } 
         }
         contImpar = contPar;
         contPar = 0;
-        for (int i = 0; i < A.length; i++) {
+        for (int i = 0; i < A.length; i++) {    
             if (A[i] % 2 == 0) {
                 B[contPar] = A[i];
                 contPar++;
@@ -45,3 +44,4 @@ public class Exer31 {
     }
 
 }
+

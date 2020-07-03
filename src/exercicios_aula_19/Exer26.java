@@ -14,8 +14,8 @@ public class Exer26 {
 //            c) C[i] deverá receber -1 quando A[i] for menor que B[i]. 
 
         int[] A = new int[10];
-        int[] B = new int[10];
-        int[] C = new int[10];
+        int[] B = new int[A.length];
+        int[] C = new int[B.length];
         for (int i = 0; i < A.length; i++) {
 
             A[i] = (int) (1 + Math.random() * 99);
