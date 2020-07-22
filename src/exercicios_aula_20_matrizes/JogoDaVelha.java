@@ -26,7 +26,7 @@ public class JogoDaVelha {
         int posLinha, posColuna;
         int cont1 = 0, cont2 = 0;
         int contador1 = 0, contador2 = 0;
-        boolean fimJogo = false, jogou = false, verifica = false;
+        boolean fimJogo = false, jogou = false, verifica;
         for (int i = 0; i < tabuleiro.length; i++) {
             for (int j = 0; j < tabuleiro[i].length; j++) {
                 tabuleiro[i][j] = "*";
