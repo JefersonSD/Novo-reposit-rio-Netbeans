@@ -17,11 +17,11 @@ public class Carro2 {
     double consumoCombustivel;
     // método sem parâmetro
     void exibirAutonomia(){
-        System.out.println("A autonomia do carro é " + capCombustivel * consumoCombustivel + "Km.");
+        System.out.println("A autonomia do carro é " + this.capCombustivel * this.consumoCombustivel + "Km.");
     }
     //método com retorno
     double obterAutonomia(){
-        return capCombustivel*consumoCombustivel;
+        return this.capCombustivel*this.consumoCombustivel;
     }
     //método com parâmetro
      double calcularCombustivel(double km){
