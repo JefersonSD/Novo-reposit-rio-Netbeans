@@ -28,7 +28,7 @@ class Exemplo {
             System.out.println(c.getTelefone());
             System.out.println(c.getEmail());
         }
-      
+                  
     }
 
 }
