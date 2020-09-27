@@ -3,20 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package aula71_threads_synchronized;
 
 /**
  *
  * @author jsjef
  */
-public final class Constantes {
-    public static final int NUMERO = 2;
+public class Teste {
     public static void main(String[] args) {
-    int [] a = new int[3];
-    
-    a[0] = 1;
+        
+        int [] array = {1,2,3,4,5};
+        
+        MinhaThreadSoma t1 = new MinhaThreadSoma(" #1 ", array);
+        MinhaThreadSoma t2 = new MinhaThreadSoma(" #2 ", array);
+        
+        
     }
-    
-    
-  
-
 }

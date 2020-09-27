@@ -3,20 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package exercicios_para_praticar_threads;
 
 /**
  *
  * @author jsjef
  */
-public final class Constantes {
-    public static final int NUMERO = 2;
+public class TesteDeposito {
+
     public static void main(String[] args) {
-    int [] a = new int[3];
+
+        Deposito d = new Deposito();
+        
+        ThreadProdutor produtor = new ThreadProdutor(d, 200);
+        ThreadConsumidor consumidor = new ThreadConsumidor(d, 400);
     
-    a[0] = 1;
     }
-    
-    
-  
 
 }

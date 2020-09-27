@@ -1,0 +1,30 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package aula56_enum_metodos_abstratos;
+
+/**
+ *
+ * @author jsjef
+ */
+public class Teste {
+    public static void main(String[] args) {
+        
+//        for(TipoDocumento doc : TipoDocumento.values()){
+//            System.out.println(doc + " -- " + doc.testeGeraNumero());
+//        }
+        
+        Pessoa pf = new Pessoa();
+        pf.setTipoDocumento(Enum.valueOf(TipoDocumento.class, "CPF"));
+        pf.setNumeroDocumento(pf.getTipoDocumento().testeGeraNumero());
+        System.out.println(pf);
+        
+        Pessoa pj = new Pessoa();
+        pj.setTipoDocumento(Enum.valueOf(TipoDocumento.class, "CNPJ"));
+        pj.setNumeroDocumento(pj.getTipoDocumento().testeGeraNumero());
+        System.out.println(pj);
+    }
+    
+}

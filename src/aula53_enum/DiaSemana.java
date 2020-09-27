@@ -3,20 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package aula53_enum;
 
 /**
  *
  * @author jsjef
  */
-public final class Constantes {
-    public static final int NUMERO = 2;
-    public static void main(String[] args) {
-    int [] a = new int[3];
+public enum DiaSemana {
     
-    a[0] = 1;
-    }
+    SEGUNDA, TERCA, QUARTA, QUINTA, SEXTA, SABADO, DOMINGO;
     
-    
-  
-
 }

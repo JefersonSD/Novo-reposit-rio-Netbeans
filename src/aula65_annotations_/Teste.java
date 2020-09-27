@@ -3,20 +3,26 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package aula65_annotations_;
 
 /**
  *
  * @author jsjef
  */
-public final class Constantes {
-    public static final int NUMERO = 2;
+@InformacaoAula(
+        autor = "Jeferson",
+        aulaNumero = 64
+)
+
+public class Teste {
+
+    @InformacaoAula(
+            autor = "Jeferson",
+            aulaNumero = 64
+    )
+
     public static void main(String[] args) {
-    int [] a = new int[3];
-    
-    a[0] = 1;
+
     }
-    
-    
-  
 
 }

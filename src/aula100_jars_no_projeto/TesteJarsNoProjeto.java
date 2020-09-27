@@ -3,20 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package aula100_jars_no_projeto;
+
+import org.apache.commons.lang3.StringUtils;
+
 
 /**
  *
  * @author jsjef
  */
-public final class Constantes {
-    public static final int NUMERO = 2;
+public class TesteJarsNoProjeto {
     public static void main(String[] args) {
-    int [] a = new int[3];
-    
-    a[0] = 1;
+        
+        //Utilizando uma classe do apache commons
+        
+        System.out.println(StringUtils.capitalize("jeferson"));
+        
+        
     }
     
-    
-  
-
 }

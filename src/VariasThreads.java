@@ -8,15 +8,11 @@
  *
  * @author jsjef
  */
-public final class Constantes {
-    public static final int NUMERO = 2;
-    public static void main(String[] args) {
-    int [] a = new int[3];
-    
-    a[0] = 1;
-    }
-    
-    
-  
+public class VariasThreads {
+ public static void main(String[] args) {
+     
+     Escrita e = new Escrita();
+     Escrita e1 = new Escrita();
 
+ }    
 }

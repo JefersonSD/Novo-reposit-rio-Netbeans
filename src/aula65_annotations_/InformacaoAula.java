@@ -3,16 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package aula65_annotations_;
 
 /**
  *
  * @author jsjef
  */
-public class Teste2 extends Teste1{
-
-    @Override
-    public void teste() {
-        
-    }
+@interface  InformacaoAula {
+    
+    String autor();
+    int aulaNumero();
+    String blog() default "jeferson.blog";
+    String site() default "loiane.training";
+    
     
 }

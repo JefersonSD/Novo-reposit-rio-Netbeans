@@ -3,11 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package aula64_classes_internas_aninhadas;
 
 /**
  *
  * @author jsjef
  */
-public abstract class Teste1 implements Interface{
+public interface Texto {
+    
+    void imprimeTexto();
     
 }
